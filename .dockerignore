@@ -1,14 +1,4 @@
-.git
-.gitignore
-mongodb
-
-# Python caches
-__pycache__/
-*.py[cod]
-
-# macOS
-.DS_Store
-
-# local secrets / config (mounted at runtime instead)
-config/config.yml
-config/config.env
+chatgpt_telegram_bot (پوشه اصلی)
+└── config (پوشه کانفیگ)
+    ├── config.example.yml
+    └── config.yml  <--- (دقیقاً اینجا باید باشد، نه در صفحه اصلی پروژه)
