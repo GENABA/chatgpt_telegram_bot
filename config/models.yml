@@ -4,8 +4,8 @@ info:
   gpt-4o:
     type: chat_completion
     vision: true
-    name: GPT-4o
-    description: GPT-4o is a special variant of GPT-4 designed for optimal performance and accuracy. Suitable for complex and detailed tasks.
+    name: "🧠 GPT-4o"
+    description: "نسخه اصلی و هوشمند GPT-4 که برای کارهای پیچیده، تحلیل دقیق و پردازش اطلاعات بسیار عالی است."
 
     price_per_1000_input_tokens: 0.0025
     price_per_1000_output_tokens: 0.01
@@ -18,8 +18,8 @@ info:
   gpt-4o-mini:
     type: chat_completion
     vision: true
-    name: GPT-4o mini
-    description: GPT-4o mini is a <b>fast</b> and <b>affordable</b> small model. It's smarter and cheaper than GPT-3.5 Turbo and supports image understanding.
+    name: "⚡ GPT-4o mini (رایگان/پیش‌فرض)"
+    description: "یک مدل فوق‌العاده <b>سریع</b>، <b>اقتصادی</b> و هوشمند. بهترین گزینه برای چت‌های روزمره و کارهای عمومی با قابلیت فهم تصاویر."
 
     price_per_1000_input_tokens: 0.00015
     price_per_1000_output_tokens: 0.0006
@@ -33,8 +33,8 @@ info:
     type: chat_completion
     provider: openrouter
     vision: true
-    name: GPT-5.5
-    description: GPT-5.5 is OpenAI's latest flagship model — the smartest option for complex reasoning and coding. Routed via <b>OpenRouter</b> (requires openrouter_api_key).
+    name: "🚀 GPT-5.5"
+    description: "جدیدترین شاهکار OpenAI — هوشمندترین مدل برای استدلال‌های عمیق منطقی، برنامه‌نویسی و حل مسائل سخت. (اجرا از طریق <b>OpenRouter</b>)"
 
     price_per_1000_input_tokens: 0.005
     price_per_1000_output_tokens: 0.03
@@ -48,8 +48,8 @@ info:
     type: chat_completion
     provider: openrouter
     vision: true
-    name: Claude Opus 4.8
-    description: Anthropic's most capable model — top-tier reasoning, coding and long-context work. Routed via <b>OpenRouter</b> (requires openrouter_api_key).
+    name: "👑 Claude Opus 4.8"
+    description: "قدرتمندترین مدل شرکت Anthropic — استادِ پردازش متون طولانی، برنامه‌نویسی تخصصی و تحلیل‌های علمی. (اجرا از طریق <b>OpenRouter</b>)"
 
     price_per_1000_input_tokens: 0.005
     price_per_1000_output_tokens: 0.025
@@ -63,8 +63,8 @@ info:
     type: chat_completion
     provider: openrouter
     vision: true
-    name: Claude Sonnet
-    description: Anthropic's balanced model — strong quality with good speed and price. Routed via <b>OpenRouter</b> (requires openrouter_api_key).
+    name: "🎭 Claude Sonnet"
+    description: "مدل متعادل و محبوب Anthropic — ترکیب فوق‌العاده‌ای از کیفیت پاسخ‌دهی عالی، سرعت خوب و هزینه مناسب. (اجرا از طریق <b>OpenRouter</b>)"
 
     price_per_1000_input_tokens: 0.003
     price_per_1000_output_tokens: 0.015
@@ -78,8 +78,8 @@ info:
     type: chat_completion
     provider: openrouter
     vision: true
-    name: Claude Haiku
-    description: Anthropic's fastest and most affordable model for everyday tasks. Routed via <b>OpenRouter</b> (requires openrouter_api_key).
+    name: "🎈 Claude Haiku"
+    description: "سریع‌ترین و به‌صرفه‌ترین مدل شرکت Anthropic برای انجام کارهای سبک روزانه با سرعت بسیار بالا. (اجرا از طریق <b>OpenRouter</b>)"
 
     price_per_1000_input_tokens: 0.001
     price_per_1000_output_tokens: 0.005
