@@ -1,7 +1,7 @@
 import yaml
 import dotenv
 from pathlib import Path
-
+import os
 config_dir = Path(__file__).parent.parent.resolve() / "config"
 
 # load yaml config
@@ -12,9 +12,9 @@ with open(config_dir / "config.example.yml", 'r') as f:
 config_env = dotenv.dotenv_values(config_dir / "config.env")
 
 # config parameters
-telegram_token = config_yaml["telegram_token"]
-openai_api_key = config_yaml["openai_api_key"]
-openai_api_base = config_yaml.get("openai_api_base", None)
+telegram_token = os.environ.get("TELEGRAM_TOKEN", config_yaml.get("telegram_token", ""))
+openai_api_key = os.environ.get("OPENAI_API_KEY", config_yaml.get("openai_api_key", ""))
+openai_api_base = os.environ.get("OPENAI_API_BASE", "https://openrouter.ai/api/v1")
 openrouter_api_key = config_yaml.get("openrouter_api_key", None)
 openrouter_api_base = config_yaml.get("openrouter_api_base", "https://openrouter.ai/api/v1")
 allowed_telegram_usernames = config_yaml["allowed_telegram_usernames"]
