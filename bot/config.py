@@ -25,7 +25,7 @@ image_size = config_yaml.get("image_size", "1024x1024")
 n_chat_modes_per_page = config_yaml.get("n_chat_modes_per_page", 5)
 mongodb_uri = "mongodb://mongo:ZmqipdAjZSbJCQkLUhVTBiiyAUTfjyIP@shuttle.proxy.rlwy.net:31152/chatgpt_telegram_bot?authSource=admin"
 
-# chat_modes
+
 with open(config_dir / "chat_modes.yml", 'r') as f:
     chat_modes = yaml.safe_load(f)
 
