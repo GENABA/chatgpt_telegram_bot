@@ -40,17 +40,18 @@ logger = logging.getLogger(__name__)
 user_semaphores = {}
 user_tasks = {}
 
-HELP_MESSAGE = """Commands:
-⚪ /retry – Regenerate last bot answer
-⚪ /new – Start new dialog
-⚪ /mode – Select chat mode
-⚪ /settings – Show settings
-⚪ /balance – Show balance
-⚪ /help – Show help
+HELP_MESSAGE = """سلام! من ربات دستیار هوشمند میثاق هستم 🤖
 
-🎨 Generate images from text prompts in <b>👩‍🎨 Artist</b> /mode
-👥 Add bot to <b>group chat</b>: /help_group_chat
-🎤 You can send <b>Voice Messages</b> instead of text
+دستورات فعال من:
+⚪ /new – شروع مکالمه جدید و تازه کردن حافظه ربات
+⚪ /mode – انتخاب و تغییر حالت دستیار (برنامه‌نویس، مترجم و...)
+⚪ /retry – تولید مجدد آخرین پاسخ ارسال شده
+⚪ /settings – مدیریت تنظیمات و انتخاب مدل هوش مصنوعی
+⚪ /balance – نمایش میزان اعتبار و هزینه مصرف شده
+⚪ /help – نمایش این پیام راهنما
+
+🎨 با فعال کردن حالت <b>👩‍🎨 طراح و نقاش</b> در منوی /mode، می‌توانید تصویر بسازید.
+🎤 شما می‌توانید به جای متن، برای من <b>پیام صوتی (ویس)</b> بفرستید تا پاسخ دهم.
 """
 
 HELP_GROUP_CHAT_MESSAGE = """You can add bot to any <b>group chat</b> to help and entertain its participants!
