@@ -76,3 +76,17 @@
 mv config/config.example.yml config/config.yml
 mv config/config.example.env config/config.env
 # سپس فایل config/config.yml را ویرایش کرده و کلیدهای دریافتی را جایگزین کنید.
+۵. اجرا با داکر:
+
+Bash
+docker-compose --env-file config/config.env up --build
+
+⚙️ تنظیمات مهم (config/config.yml)گزینهتوضیحاتtelegram_tokenتوکن ربات تلگرام دریافتی از BotFatheropenai_api_keyکلید اصلی OpenAI API شماopenrouter_api_keyکلید فرعی OpenRouter برای استفاده از مدل‌های Claude و GPT-5.5allowed_telegram_usernamesلیست یوزرهایی که مجاز به استفاده هستند (خالی گذاشتن یعنی ربات برای همه باز است)new_dialog_timeoutمدت زمان (به ثانیه) برای بسته شدن خودکار چت قدیمی و شروع مکالمه جدیدenable_message_streamingفعال/غیرفعال‌سازی ارسال پاسخ‌ها به صورت زنده و کلمه به کلمه💬 دستورات ربات در تلگرامدستورتوضیحات/newشروع یک مکالمه جدید و پاک کردن حافظه موقت چت/modeانتخاب و تغییر حالت چت (دستیار، برنامه‌نویس، مترجم و...)/retryتولید مجدد آخرین پاسخ ارسال شده توسط هوش مصنوعی/settingsتنظیم مدل فعال ربات و بررسی گزینه‌های کاربری/balanceنمایش دقیق میزان دلار مصرف شده از اکانت API شما/helpنمایش پیام راهنمای استفاده از ربات🗂️ ساختار پروژهbot/
+  bot.py           # هندلرهای تلگرام، سیستم استریم و پردازش دستورات
+  openai_utils.py  # اتصال به موتورهای OpenAI و OpenRouter و شمارش توکن‌ها
+  config.py        # لودر فایل‌های تنظیمات یامال پروژه
+  database.py      # اتصال به پایگاه‌داده MongoDB جهت ذخیره‌سازی مکالمات
+config/
+  config.yml       # تنظیمات کلیدهای دسترسی و فیلتر کاربران
+  models.yml       # لیست قیمت، امتیازها و دیتای مدل‌های فعال ربات
+  chat_modes.yml   # پرامپت‌ها و ساختار حالت‌های چت فارسی
